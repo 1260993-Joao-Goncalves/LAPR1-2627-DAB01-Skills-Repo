@@ -1,4 +1,4 @@
-#equipa{background: lightblue;}
+# equipa{background: lightblue;}
 # OLÁ
 ## OLÁ
 ## Tables
