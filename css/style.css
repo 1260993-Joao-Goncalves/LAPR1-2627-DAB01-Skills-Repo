@@ -83,7 +83,7 @@ a:focus-visible, .botao:focus-visible {
   color: var(--cor-branco);
 }
 
-.logo-isep {
+.ISEP_marca_cor {
   height: 44px;
   width: auto;
   background: var(--cor-branco);
