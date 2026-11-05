@@ -1,0 +1,293 @@
+/* =========================================================
+   CORES DO SITE
+   Muda aqui e o site todo muda de uma vez.
+   ========================================================= */
+:root {
+  --cor-principal: #123c52;   /* azul petróleo: cabeçalho, títulos, rodapé */
+  --cor-destaque:  #f2a541;   /* âmbar: botão e pormenores */
+  --cor-texto:     #1d2a33;   /* texto normal */
+  --cor-suave:     #5b6b75;   /* texto secundário */
+  --cor-fundo:     #f7f9fa;   /* fundo da página */
+  --cor-branco:    #ffffff;
+
+  --letra-titulos: "Space Grotesk", Arial, sans-serif;
+  --letra-texto:   "Source Sans 3", Arial, sans-serif;
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--letra-texto);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+}
+
+h1, h2, h3 {
+  font-family: var(--letra-titulos);
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+}
+
+h2 { font-size: 2rem; color: var(--cor-principal); }
+h3 { font-size: 1.2rem; }
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--cor-principal); }
+
+a:focus-visible, .botao:focus-visible {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 3px;
+}
+
+/* Largura máxima do conteúdo, centrado */
+.contentor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+.cabecalho {
+  background: var(--cor-principal);
+  position: sticky;   /* o cabeçalho fica fixo no topo ao fazer scroll */
+  top: 0;
+  z-index: 10;
+}
+
+.cabecalho-interior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+
+.logo-isep {
+  height: 44px;
+  width: auto;
+  background: var(--cor-branco);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.marca-nome {
+  font-family: var(--letra-titulos);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--cor-branco);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover { border-bottom-color: var(--cor-destaque); }
+
+/* =========================================================
+   TÍTULO INTRODUTÓRIO
+   ========================================================= */
+.intro {
+  background: var(--cor-branco);
+  padding: 72px 0 80px;
+  border-bottom: 1px solid #e3e8eb;
+}
+
+.intro-grelha {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.intro-projeto {
+  color: var(--cor-suave);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.intro h1 {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  color: var(--cor-principal);
+  letter-spacing: -0.02em;
+}
+
+.intro-frase {
+  font-size: 1.2rem;
+  color: var(--cor-suave);
+  max-width: 34em;
+  margin: 0 0 32px;
+}
+
+.botao {
+  display: inline-block;
+  background: var(--cor-destaque);
+  color: var(--cor-texto);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 26px;
+  border-radius: 999px;
+}
+
+.botao:hover { background: #e8932a; }
+
+/* =========================================================
+   SECÇÕES
+   ========================================================= */
+.seccao { padding: 80px 0; }
+
+.tres-colunas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.bloco {
+  border-top: 4px solid var(--cor-principal);
+  padding-top: 20px;
+}
+
+.bloco h3 { color: var(--cor-principal); }
+
+.bloco ul { padding-left: 1.2em; margin: 0; }
+.bloco li { margin-bottom: 6px; }
+
+/* Secção escura (características) */
+.seccao-escura {
+  background: var(--cor-principal);
+  color: var(--cor-branco);
+}
+
+.seccao-escura h2 { color: var(--cor-branco); }
+
+.caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+  color: var(--cor-destaque);
+  margin-bottom: 14px;
+}
+
+.caracteristica p { color: #cfdde4; margin: 0; }
+
+.publico {
+  margin-top: 56px;
+  padding: 24px 28px;
+  border-left: 4px solid var(--cor-destaque);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.publico p { margin: 0; color: #cfdde4; }
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+.rodape {
+  background: #0c2a3a;
+  color: #cfdde4;
+  padding-top: 64px;
+}
+
+.rodape h2 {
+  color: var(--cor-branco);
+  font-size: 1.3rem;
+}
+
+.rodape-grelha {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+}
+
+.equipa, .fontes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.equipa li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.equipa .nome { color: var(--cor-branco); font-weight: 600; }
+.equipa .numero { color: var(--cor-destaque); }
+
+.fontes li { margin-bottom: 10px; }
+.fontes a { color: #cfdde4; }
+.fontes a:hover { color: var(--cor-destaque); }
+
+.logo-rodape { height: 56px; margin-bottom: 14px; }
+
+.rodape-isep p { margin: 0; font-size: 0.95rem; }
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px 0;
+  font-size: 0.9rem;
+}
+
+.copyright p { margin: 0; }
+
+/* =========================================================
+   TELEMÓVEL E TABLET
+   ========================================================= */
+@media (max-width: 900px) {
+  .intro-grelha, .tres-colunas, .rodape-grelha { grid-template-columns: 1fr; }
+  .caracteristicas { grid-template-columns: repeat(2, 1fr); }
+  .intro { padding: 48px 0 56px; }
+  .seccao { padding: 56px 0; }
+}
+
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .caracteristicas { grid-template-columns: 1fr; }
+  .cabecalho { position: static; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

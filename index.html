@@ -1,223 +1,196 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Uni!Study</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Nome que aparece no separador do navegador -->
+  <title>NOME DO PRODUTO | LAPR1 – Equipa DAB01</title>
+  <meta name="description" content="Página do projeto LAPR1 da equipa DAB01 – ISEP.">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Tipos de letra (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Uni!Study<br/h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- Estilos do site (cores, letras, espaços) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
-					</header>
+<body>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  <!-- =========================================================
+       CABEÇALHO: logótipo do ISEP, nome do projeto e menu
+       ========================================================= -->
+  <header class="cabecalho">
+    <div class="contentor cabecalho-interior">
+      <a class="marca" href="#inicio">
+        <!-- Põe o logótipo oficial em images/logo-isep.png -->
+        <img src="images/logo-isep.png" alt="Logótipo ISEP-UTP" class="logo-isep">
+        <span class="marca-nome">NOME DO PRODUTO</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#equipa">Equipa</a></li>
+          <li><a href="#fontes">Fontes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-				<!-- Main -->
-					<div id="main">
+  <main id="inicio">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+    <!-- =========================================================
+         TÍTULO INTRODUTÓRIO DO PRODUTO
+         ========================================================= -->
+    <section class="intro">
+      <div class="contentor intro-grelha">
+        <div class="intro-texto">
+          <p class="intro-projeto">Projeto LAPR1 · Equipa DAB01</p>
+          <h1>NOME DO PRODUTO</h1>
+          <p class="intro-frase">
+            ESCREVER AQUI uma frase curta que explique o produto.
+            Exemplo: "Uma aplicação que ajuda estudantes a organizar o estudo e a acompanhar o progresso."
+          </p>
+          <a class="botao" href="#objetivos">Conhecer o produto</a>
+        </div>
+        <!-- Imagem ilustrativa: substitui por uma imagem do vosso produto se quiserem -->
+        <img class="intro-imagem" src="images/ilustracao.svg"
+             alt="Ilustração do produto: ecrã de computador e telemóvel com a interface da aplicação">
+      </div>
+    </section>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+    <!-- =========================================================
+         SUBSECÇÃO 1: OBJETIVOS, CONTEXTO E SERVIÇOS
+         ========================================================= -->
+    <section id="objetivos" class="seccao">
+      <div class="contentor">
+        <h2>Objetivos, contexto e serviços</h2>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+        <div class="tres-colunas">
+          <article class="bloco">
+            <h3>Contexto</h3>
+            <p>
+              ESCREVER AQUI: qual é o problema ou a necessidade que a equipa identificou?
+              Quem é afetado e porque é importante resolvê-lo?
+            </p>
+          </article>
 
-					</div>
+          <article class="bloco">
+            <h3>Objetivos</h3>
+            <ul>
+              <li>ESCREVER AQUI o objetivo 1</li>
+              <li>ESCREVER AQUI o objetivo 2</li>
+              <li>ESCREVER AQUI o objetivo 3</li>
+            </ul>
+          </article>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+          <article class="bloco">
+            <h3>Serviços</h3>
+            <ul>
+              <li>ESCREVER AQUI o serviço 1</li>
+              <li>ESCREVER AQUI o serviço 2</li>
+              <li>ESCREVER AQUI o serviço 3</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    <!-- =========================================================
+         SUBSECÇÃO 2: CARACTERÍSTICAS PRINCIPAIS
+         ========================================================= -->
+    <section id="caracteristicas" class="seccao seccao-escura">
+      <div class="contentor">
+        <h2>Características principais</h2>
 
-			</div>
+        <div class="caracteristicas">
+          <article class="caracteristica">
+            <!-- Ícone (desenho em SVG) -->
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>Característica 1</h3>
+            <p>ESCREVER AQUI o que esta característica faz e porque é útil.</p>
+          </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+          <article class="caracteristica">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="2" width="12" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M11 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>Característica 2</h3>
+            <p>ESCREVER AQUI o que esta característica faz e porque é útil.</p>
+          </article>
 
-	</body>
+          <article class="caracteristica">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>Característica 3</h3>
+            <p>ESCREVER AQUI o que esta característica faz e porque é útil.</p>
+          </article>
+
+          <article class="caracteristica">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <h3>Característica 4</h3>
+            <p>ESCREVER AQUI o que esta característica faz e porque é útil.</p>
+          </article>
+        </div>
+
+        <div class="publico">
+          <h3>A quem se destina</h3>
+          <p>ESCREVER AQUI quem vai usar o produto (por exemplo: estudantes do ensino superior, pequenas empresas, idosos...).</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       RODAPÉ: equipa, fontes, logótipo e copyright
+       ========================================================= -->
+  <footer class="rodape">
+    <div class="contentor rodape-grelha">
+
+      <section id="equipa">
+        <h2>Equipa DAB01</h2>
+        <!-- Completa com os nomes e números de todos os elementos -->
+        <ul class="equipa">
+          <li><span class="nome">João Gonçalves</span> <span class="numero">1260993</span></li>
+          <li><span class="nome">Miguel Simões</span> <span class="numero">1261123</span></li>
+          <li><span class="nome">Nome Apelido</span> <span class="numero">0000000</span></li>
+          <li><span class="nome">Nome Apelido</span> <span class="numero">0000000</span></li>
+        </ul>
+      </section>
+
+      <section id="fontes">
+        <h2>Fontes</h2>
+        <!-- target="_blank" abre o link num separador novo -->
+        <ul class="fontes">
+          <li><a href="https://www.isep.ipp.pt" target="_blank" rel="noopener">ISEP – Instituto Superior de Engenharia do Porto</a></li>
+          <li><a href="https://www.ipp.pt" target="_blank" rel="noopener">Politécnico do Porto</a></li>
+          <li><a href="https://EXEMPLO.pt" target="_blank" rel="noopener">ESCREVER AQUI o nome da fonte 1</a></li>
+          <li><a href="https://EXEMPLO.pt" target="_blank" rel="noopener">ESCREVER AQUI o nome da fonte 2</a></li>
+        </ul>
+      </section>
+
+      <div class="rodape-isep">
+        <img src="images/logo-isep.png" alt="Logótipo ISEP-UTP" class="logo-isep logo-rodape">
+        <p>Laboratório/Projeto I (LAPR1)<br>Licenciatura em Engenharia Informática</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <div class="contentor">
+        <p>&copy; 2026 Equipa DAB01 · ISEP. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
