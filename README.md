@@ -1,4 +1,4 @@
-text-align: LAPR1-2627-DAB01-Skills-Repo;
+#equipa{background: lightblue;}
 # OLÁ
 ## OLÁ
 ## Tables
