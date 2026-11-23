@@ -16,7 +16,6 @@
 @media(max-width:720px){.team-showcase{padding:75px 0}.team-heading{display:block}.team-heading>p{margin-top:18px}.team-cards{gap:13px}.member-art{height:190px}.member-info{display:block;padding:16px}.member-info h3{font-size:15px}.member-info>span{display:block;margin-top:6px}.footer-main-updated{grid-template-columns:1fr}.footer-main-updated .source-list{grid-template-columns:1fr}}
 @media(max-width:420px){.team-cards{grid-template-columns:1fr 1fr}.member-art{height:155px}.member-initials{font-size:68px}.member-info h3{font-size:14px}.member-tag{font-size:9px;padding:5px 7px}.team-footnote{align-items:flex-start}}
 
-
 /* Secção da equipa — apresentação minimalista inspirada na referência Webcomum */
 .team-showcase{background:#f4f4f4;color:#17243a;padding:76px 0 70px;overflow:hidden}
 .team-showcase:before,.team-showcase:after{display:none}
@@ -29,9 +28,8 @@
 .member-card-simple{background:transparent;border:0;border-radius:0;box-shadow:none;text-align:center;padding:0;transition:transform .25s ease}
 .member-card-simple:hover{transform:translateY(-5px);background:transparent;border:0}
 .member-photo-placeholder{width:112px;height:112px;margin:0 auto 16px;border-radius:12px;background:linear-gradient(145deg,#e0e5ee,#cbd3e1);box-shadow:0 5px 16px rgba(20,35,60,.18);display:grid;place-items:center;overflow:hidden;position:relative}
-.member-photo-placeholder:before{content:"";position:absolute;width:42px;height:42px;top:19px;border-radius:50%;background:#8794aa}
-.member-photo-placeholder:after{content:"";position:absolute;width:72px;height:42px;bottom:-5px;border-radius:42px 42px 10px 10px;background:#8794aa}
-.member-photo-placeholder span{position:absolute;z-index:2;bottom:9px;color:#fff;font:700 11px var(--font-heading);letter-spacing:1px;opacity:.95}
+.member-photo-placeholder:before,.member-photo-placeholder:after{display:none}
+.member-photo-placeholder img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .member-card-simple h3{font:700 17px var(--font-heading);color:#17243a;margin:0 0 5px}
 .member-card-simple p{font-size:13px;color:#7b8495;margin:0;letter-spacing:.3px}
 .team-caption{text-align:center;color:#8992a1;font-size:12px;margin:48px 0 0}
