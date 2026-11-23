@@ -35,17 +35,17 @@
           <div>
             <p class="section-kicker">03 · Quem está por trás</p>
             <h2>A nossa <span>equipa</span></h2>
-             <p class="team-name">Os Jaronas · DAB01</p>
+            <p class="team-name">Os Jaronas · DAB01</p>
           </div>
         </div>
         <div class="team-cards team-cards-simple">
           <article class="member-card-simple">
             <div class="member-photo-placeholder">
-              <img src="images/joaogoncalves.jpg" alt="Fotografia de João Gonçalves" width="112" height="112">
+              <img src="images/joaogoncalves.jpg" alt="Fotografia de João Gonçalves" width="112" height="112" class="photo-joao">
             </div>
             <h3>João Gonçalves</h3>
             <p>1260993</p>
-            <a class="member-email" href="mailto:1260993@isep.ipp.pt">1260993@isep.ipp.pt</a>
+            <a class="member-email" href="mailto:1260993@isep.ipp.pt" data-email="1260993@isep.ipp.pt">1260993@isep.ipp.pt</a>
           </article>
           <article class="member-card-simple">
             <div class="member-photo-placeholder">
@@ -53,7 +53,7 @@
             </div>
             <h3>Miguel Simões</h3>
             <p>1261123</p>
-            <a class="member-email" href="mailto:1261123@isep.ipp.pt">1261123@isep.ipp.pt</a>
+            <a class="member-email" href="mailto:1261123@isep.ipp.pt" data-email="1261123@isep.ipp.pt">1261123@isep.ipp.pt</a>
           </article>
           <article class="member-card-simple">
             <div class="member-photo-placeholder">
@@ -61,7 +61,7 @@
             </div>
             <h3>Ricardo Rodrigues</h3>
             <p>1260819</p>
-            <a class="member-email" href="mailto:1260819@isep.ipp.pt">1260819@isep.ipp.pt</a>
+            <a class="member-email" href="mailto:1260819@isep.ipp.pt" data-email="1260819@isep.ipp.pt">1260819@isep.ipp.pt</a>
           </article>
           <article class="member-card-simple">
             <div class="member-photo-placeholder">
@@ -69,12 +69,29 @@
             </div>
             <h3>João Santos</h3>
             <p>1261219</p>
-            <a class="member-email" href="mailto:1261219@isep.ipp.pt">1261219@isep.ipp.pt</a>
+            <a class="member-email" href="mailto:1261219@isep.ipp.pt" data-email="1261219@isep.ipp.pt">1261219@isep.ipp.pt</a>
           </article>
         </div>
         <p class="team-caption">Laboratório/Projeto I · Licenciatura em Engenharia Informática · ISEP</p>
       </div>
     </section>
   </main>
+
+  <script>
+    document.querySelectorAll('.member-email').forEach((link) => {
+      link.addEventListener('click', () => {
+        const email = link.dataset.email;
+        if (navigator.clipboard && email) {
+          navigator.clipboard.writeText(email).catch(() => {});
+        }
+        const original = link.textContent;
+        link.textContent = 'Copiado para a área de transferência!';
+        clearTimeout(link._timer);
+        link._timer = setTimeout(() => {
+          link.textContent = original;
+        }, 2000);
+      });
+    });
+  </script>
 </body>
 </html>
