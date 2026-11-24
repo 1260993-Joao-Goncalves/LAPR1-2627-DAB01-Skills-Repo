@@ -3,24 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uni!Study — Google Play</title>
+  <title>Simulação Google Play | Uni!Study</title>
+  <meta name="description" content="Simulação de como a aplicação Uni!Study aparece na Google Play.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    body { margin: 0; background: #0d1326; color: #fff; text-align: center; }
-    .top-bar { padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; background: #101a38; }
-    .top-bar a { color: #fff; text-decoration: none; font-weight: 700; }
-    .img-wrap { padding: 20px; }
-    .img-wrap img { max-width: 100%; height: auto; border-radius: 12px; display: inline-block; }
+    .store-sim-page {
+      padding: 64px 0 90px;
+      background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+    }
+
+    .sim-showcase {
+      max-width: 440px;
+      margin: 36px auto 32px;
+      background: #ffffff;
+      padding: 14px;
+      border-radius: 22px;
+      border: 1px solid #e8ebf5;
+      box-shadow: 0 24px 60px rgba(16, 26, 56, 0.14);
+    }
+
+    .sim-showcase img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .store-footer-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
   </style>
 </head>
 <body>
-  <div class="top-bar">
-    <a href="download.html">← Voltar</a>
-    <span>Google Play</span>
-    <a href="index.html">Início</a>
-  </div>
-  <div class="img-wrap">
-    <img src="images/googleplay.jpg" alt="Uni!Study Google Play">
-  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Uni!Study — início">
+        <img src="images/App-logo.png" alt="Logótipo Uni!Study" class="brand-logo">
+        <span class="brand-name">Uni<span>!</span>Study</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="index.html#objetivos">O projeto</a></li>
+          <li><a href="index.html#caracteristicas">Características</a></li>
+          <li><a href="equipa.html">Equipa</a></li>
+          <li><a href="index.html#fontes">Fontes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="store-sim-page">
+    <div class="container">
+      <div class="section-heading heading-center">
+        <p class="section-kicker">Simulação de loja</p>
+        <h2>Simulação da <span>Uni!Study</span> na Google Play.</h2>
+        <p class="section-lead">Simulação de como a aplicação aparece na Google Play (Android).</p>
+      </div>
+
+      <div class="sim-showcase">
+        <img src="images/googleplay.jpg" alt="Simulação da Uni!Study na Google Play">
+      </div>
+
+      <div class="store-footer-actions">
+        <a class="button" href="download.html" style="background:#101a38;color:#fff;">← Escolher outra loja</a>
+        <a class="button" href="index.html" style="background:#f5f7ff;color:#5876ff;border:1px solid #e8ebf5;">Voltar ao início</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main footer-main-updated">
+      <section class="sources-section">
+        <p class="section-kicker">04 · Referências</p>
+        <h2>Fontes</h2>
+        <ul class="source-list">
+          <li><a href="https://www.isep.ipp.pt" target="_blank" rel="noopener noreferrer">ISEP – Instituto Superior de Engenharia do Porto <span>↗</span></a></li>
+          <li><a href="https://www.ipp.pt" target="_blank" rel="noopener noreferrer">Politécnico do Porto <span>↗</span></a></li>
+          <li><a href="Documents/Relatorio_Sprint1.pdf" target="_blank" rel="noopener">Relatório do projeto <span>↗</span></a></li>
+        </ul>
+      </section>
+      <div class="footer-brand"><img src="images/Isep-logo.png" alt="Logótipo ISEP" class="footer-logo"><p>Laboratório/Projeto I (LAPR1)<br>Licenciatura em Engenharia Informática</p><p class="footer-team-label">Equipa DAB01 · Os Jaronas</p></div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2026 Equipa DAB01 · ISEP</span><a href="index.html">Voltar ao início ↑</a></div></div>
+  </footer>
 </body>
 </html>
