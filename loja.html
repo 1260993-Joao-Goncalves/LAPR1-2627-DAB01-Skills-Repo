@@ -16,30 +16,30 @@
     }
 
     .phones-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 48px;
-      max-width: 740px;
+      max-width: 760px;
       margin: 0 auto 48px;
-      align-items: start;
+      align-items: flex-start;
     }
 
     .phone-frame {
       background: #0d1326;
-      padding: 12px;
+      padding: 11px;
       box-shadow: 0 26px 65px rgba(16, 26, 56, 0.24);
       border: 2px solid #2a3a6b;
-      max-width: 320px;
-      width: 100%;
-      margin-inline: auto;
+      width: 285px;
+      flex-shrink: 0;
     }
 
     .phone-frame.iphone {
-      border-radius: 44px;
+      border-radius: 42px;
     }
 
     .phone-frame.android {
-      border-radius: 30px;
+      border-radius: 28px;
       border-color: #232c42;
     }
 
@@ -52,31 +52,31 @@
     }
 
     .phone-frame.iphone .phone-screen {
-      border-radius: 34px;
+      border-radius: 32px;
     }
 
     .phone-frame.android .phone-screen {
-      border-radius: 22px;
+      border-radius: 20px;
     }
 
     .iphone-island {
-      width: 84px;
-      height: 20px;
+      width: 76px;
+      height: 18px;
       background: #0d1326;
       border-radius: 999px;
-      margin: 10px auto 8px;
+      margin: 9px auto 6px;
     }
 
     .android-top {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px 16px 4px;
+      padding: 9px 14px 4px;
     }
 
     .android-camera {
-      width: 10px;
-      height: 10px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background: #18213c;
     }
@@ -85,8 +85,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 6px 14px 8px;
-      font-size: 10px;
+      padding: 5px 12px 7px;
+      font-size: 9.5px;
       font-weight: 700;
       color: #68738c;
       border-bottom: 1px solid #eef1f8;
@@ -95,7 +95,7 @@
     .store-brand-tag {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       font-weight: 700;
     }
 
@@ -104,17 +104,17 @@
 
     .app-listing-top {
       display: flex;
-      gap: 14px;
+      gap: 11px;
       align-items: center;
-      padding: 14px 14px 10px;
+      padding: 12px 12px 8px;
     }
 
     .app-listing-icon {
-      width: 84px;
-      height: 84px;
-      border-radius: 16px;
+      width: 72px;
+      height: 72px;
+      border-radius: 15px;
       object-fit: cover;
-      transform: scale(1.25);
+      transform: scale(1.22);
       background: #ffffff;
       flex-shrink: 0;
       border: 1px solid #e8ebf5;
@@ -129,42 +129,42 @@
 
     .app-listing-info h3 {
       margin: 0;
-      font: 700 17px var(--font-heading);
+      font: 700 15.5px var(--font-heading);
       color: #101a38;
     }
 
     .app-listing-sub {
-      margin: 2px 0 7px;
-      font-size: 11px;
+      margin: 1px 0 6px;
+      font-size: 10.5px;
       color: #68738c;
     }
 
     .install-btn {
       border: 0;
-      padding: 6px 15px;
-      font: 700 11px var(--font-heading);
+      padding: 5px 13px;
+      font: 700 10.5px var(--font-heading);
       cursor: pointer;
       transition: transform .15s ease;
     }
 
     .install-btn:hover { transform: scale(1.03); }
     .install-btn.ios { background: #0a84ff; color: #fff; border-radius: 999px; }
-    .install-btn.gp { background: #01875f; color: #fff; border-radius: 6px; padding: 6px 16px; }
+    .install-btn.gp { background: #01875f; color: #fff; border-radius: 6px; padding: 5px 14px; }
 
     .store-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
-      padding: 8px 8px;
-      margin: 0 14px 10px;
+      padding: 6px 6px;
+      margin: 0 12px 8px;
       background: #f5f7ff;
-      border-radius: 10px;
-      font-size: 10px;
+      border-radius: 9px;
+      font-size: 9px;
     }
 
     .store-stats strong {
       display: block;
-      font-size: 12px;
+      font-size: 11px;
       color: #101a38;
     }
 
@@ -173,32 +173,32 @@
     .shots-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-      padding: 0 14px 4px;
+      gap: 5px;
+      padding: 0 12px 4px;
     }
 
     .shots-row img {
       width: 100%;
-      height: 170px;
+      height: 155px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 7px;
       border: 1px solid #e8ebf5;
       display: block;
     }
 
     .store-about {
-      padding: 2px 14px 16px;
+      padding: 2px 12px 14px;
       text-align: left;
-      font-size: 11px;
+      font-size: 10.5px;
       color: #56617a;
-      line-height: 1.4;
+      line-height: 1.38;
     }
 
     .store-about strong {
       display: block;
       color: #101a38;
       margin-bottom: 2px;
-      font-size: 12px;
+      font-size: 11px;
     }
 
     .store-footer-actions {
@@ -206,10 +206,6 @@
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
-    }
-
-    @media (max-width: 720px) {
-      .phones-grid { grid-template-columns: 1fr; max-width: 320px; }
     }
   </style>
 </head>
@@ -246,7 +242,7 @@
             <div class="iphone-island"></div>
             <div class="store-bar">
               <span class="store-brand-tag ios-badge">
-                <svg width="12" height="14" viewBox="0 0 170 170" fill="currentColor" aria-hidden="true">
+                <svg width="11" height="13" viewBox="0 0 170 170" fill="currentColor" aria-hidden="true">
                   <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.13-1.9-14.34-6.08-3.69-3.03-7.61-7.72-11.77-14.06-5.02-7.66-9.15-16.54-12.38-26.64-3.23-10.1-4.85-19.62-4.85-28.56 0-12.38 3.04-22.58 9.12-30.6 6.08-8.02 13.92-12.14 23.52-12.36 4.69 0 10.22 1.44 16.59 4.31 6.37 2.87 10.48 4.33 12.32 4.38 1.56 0 6.08-1.71 13.56-5.13 7.48-3.42 13.79-4.88 18.93-4.38 13.98 1.13 24.49 6.66 31.53 16.59-12.5 7.57-18.67 17.98-18.51 31.23.15 10.47 4 19.18 11.55 26.13 5.36 4.95 11.61 8.15 18.75 9.6-1.5 4.6-3.18 9.05-5.04 13.34zM119.22 31.7c0 8.2-3.04 15.85-9.12 22.95-7.34 8.56-16.22 13.5-25.85 12.72-.16-.99-.24-2.04-.24-3.15 0-7.87 3.43-16.28 10.29-23.22 3.28-3.36 7.45-6.15 12.51-8.37 5.06-2.22 9.84-3.45 14.34-3.69.05 1.25.07 2.5.07 3.73z"/>
                 </svg>
                 App Store
@@ -284,7 +280,7 @@
             <div class="android-top"><div class="android-camera"></div></div>
             <div class="store-bar">
               <span class="store-brand-tag gp-badge">
-                <svg width="13" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <svg width="12" height="13" viewBox="0 0 24 24" aria-hidden="true">
                   <path fill="#4285F4" d="M3.6 2.2c-.3.3-.5.8-.5 1.4v16.8c0 .6.2 1.1.5 1.4l.1.1L13.1 12v-.2L3.7 2.1l-.1.1z"/>
                   <path fill="#34A853" d="M16.2 15.1L13.1 12v-.2l3.1-3.1.1.1 3.7 2.1c1.1.6 1.1 1.6 0 2.2l-3.7 2-.1.1z"/>
                   <path fill="#FBBC05" d="M16.3 15L13.1 11.9 3.6 21.4c.4.4 1 .4 1.7 0l11-6.4"/>
