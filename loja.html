@@ -18,42 +18,77 @@
     .phones-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 44px;
-      max-width: 860px;
-      margin: 0 auto 44px;
+      gap: 48px;
+      max-width: 740px;
+      margin: 0 auto 48px;
       align-items: start;
     }
 
     .phone-frame {
-      background: #101a38;
-      border-radius: 40px;
-      padding: 13px;
-      box-shadow: 0 24px 60px rgba(16, 26, 56, 0.22);
-      border: 2px solid #283868;
+      background: #0d1326;
+      padding: 12px;
+      box-shadow: 0 26px 65px rgba(16, 26, 56, 0.24);
+      border: 2px solid #2a3a6b;
+      max-width: 320px;
+      width: 100%;
+      margin-inline: auto;
+    }
+
+    .phone-frame.iphone {
+      border-radius: 44px;
+    }
+
+    .phone-frame.android {
+      border-radius: 30px;
+      border-color: #232c42;
     }
 
     .phone-screen {
       background: #ffffff;
-      border-radius: 30px;
       overflow: hidden;
       color: #18213c;
+      min-height: 610px;
+      display: flex;
+      flex-direction: column;
     }
 
-    .phone-notch {
-      width: 112px;
+    .phone-frame.iphone .phone-screen {
+      border-radius: 34px;
+    }
+
+    .phone-frame.android .phone-screen {
+      border-radius: 22px;
+    }
+
+    .iphone-island {
+      width: 84px;
       height: 20px;
-      background: #101a38;
-      border-bottom-left-radius: 14px;
-      border-bottom-right-radius: 14px;
-      margin: 0 auto 10px;
+      background: #0d1326;
+      border-radius: 999px;
+      margin: 10px auto 8px;
+    }
+
+    .android-top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px 16px 4px;
+    }
+
+    .android-camera {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #18213c;
+      margin-inline: auto;
     }
 
     .store-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 18px 10px;
-      font-size: 11px;
+      padding: 6px 14px 8px;
+      font-size: 10px;
       font-weight: 700;
       color: #68738c;
       border-bottom: 1px solid #eef1f8;
@@ -64,16 +99,18 @@
 
     .app-listing-top {
       display: flex;
-      gap: 14px;
+      gap: 12px;
       align-items: center;
-      padding: 16px 18px 12px;
+      padding: 14px 14px 10px;
     }
 
     .app-listing-icon {
-      width: 72px;
-      height: 72px;
-      border-radius: 16px;
-      object-fit: cover;
+      width: 62px;
+      height: 62px;
+      border-radius: 14px;
+      object-fit: contain;
+      background: #f5f7ff;
+      padding: 4px;
       flex-shrink: 0;
       border: 1px solid #e8ebf5;
     }
@@ -86,43 +123,42 @@
 
     .app-listing-info h3 {
       margin: 0;
-      font: 700 19px var(--font-heading);
+      font: 700 17px var(--font-heading);
       color: #101a38;
     }
 
     .app-listing-sub {
-      margin: 2px 0 8px;
-      font-size: 12px;
+      margin: 2px 0 7px;
+      font-size: 11px;
       color: #68738c;
     }
 
     .install-btn {
       border: 0;
-      border-radius: 999px;
-      padding: 6px 18px;
-      font: 700 12px var(--font-heading);
+      padding: 6px 15px;
+      font: 700 11px var(--font-heading);
       cursor: pointer;
-      transition: transform .15s ease, opacity .15s ease;
+      transition: transform .15s ease;
     }
 
     .install-btn:hover { transform: scale(1.03); }
-    .install-btn.ios { background: #0a84ff; color: #fff; }
-    .install-btn.gp { background: #01875f; color: #fff; border-radius: 8px; padding: 7px 20px; }
+    .install-btn.ios { background: #0a84ff; color: #fff; border-radius: 999px; }
+    .install-btn.gp { background: #01875f; color: #fff; border-radius: 6px; padding: 6px 16px; }
 
     .store-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
-      padding: 10px 12px;
-      margin: 0 18px 14px;
+      padding: 8px 8px;
+      margin: 0 14px 12px;
       background: #f5f7ff;
-      border-radius: 12px;
-      font-size: 11px;
+      border-radius: 10px;
+      font-size: 10px;
     }
 
     .store-stats strong {
       display: block;
-      font-size: 13px;
+      font-size: 12px;
       color: #101a38;
     }
 
@@ -131,32 +167,33 @@
     .shots-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      padding: 0 18px 16px;
+      gap: 6px;
+      padding: 0 14px 14px;
     }
 
     .shots-row img {
       width: 100%;
-      height: 155px;
+      height: 170px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 8px;
       border: 1px solid #e8ebf5;
       display: block;
     }
 
     .store-about {
-      padding: 0 18px 20px;
+      padding: 0 14px 18px;
       text-align: left;
-      font-size: 12px;
+      font-size: 11px;
       color: #56617a;
       line-height: 1.45;
+      margin-top: auto;
     }
 
     .store-about strong {
       display: block;
       color: #101a38;
       margin-bottom: 4px;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .store-footer-actions {
@@ -166,8 +203,8 @@
       flex-wrap: wrap;
     }
 
-    @media (max-width: 780px) {
-      .phones-grid { grid-template-columns: 1fr; max-width: 390px; }
+    @media (max-width: 720px) {
+      .phones-grid { grid-template-columns: 1fr; max-width: 320px; }
     }
   </style>
 </head>
@@ -175,7 +212,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Uni!Study — início">
-        <img src="images/App-logo.jpg" alt="Logótipo Uni!Study" class="brand-logo">
+        <img src="images/App-logo.png" alt="Logótipo Uni!Study" class="brand-logo">
         <span class="brand-name">Uni<span>!</span>Study</span>
       </a>
       <nav aria-label="Menu principal">
@@ -194,20 +231,20 @@
       <div class="section-heading heading-center">
         <p class="section-kicker">Pré-visualização nas lojas</p>
         <h2>A <span>Uni!Study</span> no teu telemóvel.</h2>
-        <p class="section-lead">Simulação de como a aplicação aparece na App Store e na Google Play.</p>
+        <p class="section-lead">Simulação de como a aplicação aparece na App Store (iPhone) e na Google Play (Android).</p>
       </div>
 
       <div class="phones-grid">
-        <!-- Telemóvel App Store -->
-        <article class="phone-frame" id="appstore">
+        <!-- iPhone / App Store -->
+        <article class="phone-frame iphone" id="appstore">
           <div class="phone-screen">
-            <div class="phone-notch"></div>
+            <div class="iphone-island"></div>
             <div class="store-bar">
               <span class="ios-badge">App Store</span>
               <span>iOS · Educacional</span>
             </div>
             <div class="app-listing-top">
-              <img src="images/App-logo.jpg" alt="Ícone Uni!Study" class="app-listing-icon">
+              <img src="images/App-logo.png" alt="Ícone Uni!Study" class="app-listing-icon">
               <div class="app-listing-info">
                 <h3>Uni!Study</h3>
                 <p class="app-listing-sub">Os Jaronas · DAB01</p>
@@ -231,16 +268,16 @@
           </div>
         </article>
 
-        <!-- Telemóvel Google Play -->
-        <article class="phone-frame" id="googleplay">
+        <!-- Android / Google Play -->
+        <article class="phone-frame android" id="googleplay">
           <div class="phone-screen">
-            <div class="phone-notch"></div>
+            <div class="android-top"><div class="android-camera"></div></div>
             <div class="store-bar">
               <span class="gp-badge">Google Play</span>
               <span>Android · Educação</span>
             </div>
             <div class="app-listing-top">
-              <img src="images/App-logo.jpg" alt="Ícone Uni!Study" class="app-listing-icon">
+              <img src="images/App-logo.png" alt="Ícone Uni!Study" class="app-listing-icon">
               <div class="app-listing-info">
                 <h3>Uni!Study</h3>
                 <p class="app-listing-sub">Equipa DAB01 · ISEP</p>
